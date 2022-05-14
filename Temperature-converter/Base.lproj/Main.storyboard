@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,69 +12,63 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Temperature_converter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="w0x-E6-IWI">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="0Fv-JZ-ixU">
+                                <rect key="frame" x="0.0" y="-6" width="375" height="818"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXh-cq-0it">
-                                <rect key="frame" x="165" y="241" width="84" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature Converter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNt-nc-nsj">
-                                <rect key="frame" x="36" y="93" width="342" height="35"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9A-m1-oBb">
-                                <rect key="frame" x="169" y="587" width="76" height="60"/>
+                                <rect key="frame" x="157.33333333333334" y="481" width="60.666666666666657" height="48"/>
                                 <color key="tintColor" red="0.60877279158885367" green="0.91421895020362742" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GQj-i4-1fU">
-                                <rect key="frame" x="70" y="433.5" width="274" height="30"/>
+                                <rect key="frame" x="50.666666666666657" y="391" width="274" height="31"/>
                                 <color key="tintColor" red="0.78431367870000002" green="0.79215681550000006" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="VTx-UT-mf0"/>
+                                    <constraint firstAttribute="width" constant="270" id="HoB-5i-pUE"/>
                                 </constraints>
                                 <connections>
                                     <action selector="sliderValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zfm-zE-fHQ"/>
                                 </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXh-cq-0it">
+                                <rect key="frame" x="152.33333333333334" y="279.66666666666669" width="70.333333333333343" height="51.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature Converter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNt-nc-nsj">
+                                <rect key="frame" x="78" y="85" width="219" height="110"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="F9A-m1-oBb" firstAttribute="centerX" secondItem="GQj-i4-1fU" secondAttribute="centerX" id="2TY-C0-DA8"/>
-                            <constraint firstItem="w0x-E6-IWI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FDj-Ld-8Oc"/>
-                            <constraint firstItem="w0x-E6-IWI" firstAttribute="centerY" secondItem="GQj-i4-1fU" secondAttribute="centerY" id="HfO-HA-a1j"/>
-                            <constraint firstItem="wXh-cq-0it" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="241" id="JIn-qI-Iyp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F9A-m1-oBb" secondAttribute="bottom" constant="215" id="Ko5-mi-oVk"/>
-                            <constraint firstItem="WNt-nc-nsj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="MOR-i3-QmZ"/>
-                            <constraint firstItem="w0x-E6-IWI" firstAttribute="centerX" secondItem="GQj-i4-1fU" secondAttribute="centerX" id="XXd-Mr-8dj"/>
-                            <constraint firstItem="w0x-E6-IWI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="bJz-X6-jlZ"/>
-                            <constraint firstItem="GQj-i4-1fU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="eve-K0-9v0"/>
-                            <constraint firstItem="GQj-i4-1fU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fwD-vu-FaX"/>
-                            <constraint firstItem="F9A-m1-oBb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jyi-QS-aC0"/>
-                            <constraint firstItem="wXh-cq-0it" firstAttribute="centerX" relation="lessThanOrEqual" secondItem="GQj-i4-1fU" secondAttribute="centerX" id="mqj-Nc-sZQ"/>
-                            <constraint firstItem="GQj-i4-1fU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wBf-rr-hyB"/>
-                            <constraint firstItem="WNt-nc-nsj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wR2-DD-qV2"/>
-                            <constraint firstItem="wXh-cq-0it" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="y0V-cM-3Sm"/>
+                            <constraint firstItem="F9A-m1-oBb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="56m-gv-XMI"/>
+                            <constraint firstItem="WNt-nc-nsj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="5Yt-la-6Vx"/>
+                            <constraint firstItem="GQj-i4-1fU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="67E-h0-J0j"/>
+                            <constraint firstItem="WNt-nc-nsj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Avo-18-7hX"/>
+                            <constraint firstItem="GQj-i4-1fU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R89-aX-JlZ"/>
+                            <constraint firstItem="0Fv-JZ-ixU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="URq-rJ-Jcf"/>
+                            <constraint firstItem="GQj-i4-1fU" firstAttribute="top" secondItem="wXh-cq-0it" secondAttribute="bottom" constant="60" id="XXO-E0-H8w"/>
+                            <constraint firstItem="WNt-nc-nsj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.584" id="XrJ-u7-pWV"/>
+                            <constraint firstItem="F9A-m1-oBb" firstAttribute="top" secondItem="GQj-i4-1fU" secondAttribute="bottom" constant="60" id="cpO-Rj-K09"/>
+                            <constraint firstItem="wXh-cq-0it" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fNp-NB-7Ei"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Fv-JZ-ixU" secondAttribute="trailing" id="hen-6L-bvv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="0Fv-JZ-ixU" secondAttribute="top" constant="50" id="hhb-fv-CAi"/>
+                            <constraint firstItem="WNt-nc-nsj" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.135468" id="l88-Sh-Nka"/>
+                            <constraint firstItem="0Fv-JZ-ixU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="qLA-CI-dHI"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="WNt-nc-nsj"/>
-                            </mask>
-                        </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
+                                <include reference="0Fv-JZ-ixU"/>
                                 <include reference="WNt-nc-nsj"/>
                             </mask>
                         </variation>
@@ -88,16 +81,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="71.651785714285708"/>
+            <point key="canvasLocation" x="26.399999999999999" y="70.935960591133011"/>
         </scene>
     </scenes>
     <resources>
         <image name="Background" width="4000" height="3000"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

@@ -17,8 +17,8 @@ class ViewController: UIViewController {
             slider.minimumValue = 0
             slider.value = 0
             
-            slider.minimumTrackTintColor = .red
-            slider.maximumTrackTintColor = .blue
+            slider.minimumTrackTintColor = .systemOrange
+            slider.maximumTrackTintColor = .systemCyan
         }
     }
         
