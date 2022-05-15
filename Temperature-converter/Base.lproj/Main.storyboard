@@ -47,6 +47,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msu-fs-Hm1">
+                                <rect key="frame" x="95.666666666666686" y="610" width="184" height="57"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.70392694536423839" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="184" id="aB4-WN-gYy"/>
+                                    <constraint firstAttribute="height" constant="57" id="sJy-q1-BPu"/>
+                                </constraints>
+                                <color key="tintColor" red="0.89411771299999998" green="0.63921570780000003" blue="0.90196073060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetSlider:" destination="BYZ-38-t0r" eventType="touchUpInside" id="boG-EO-25P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -58,7 +74,9 @@
                             <constraint firstItem="GQj-i4-1fU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R89-aX-JlZ"/>
                             <constraint firstItem="0Fv-JZ-ixU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="URq-rJ-Jcf"/>
                             <constraint firstItem="GQj-i4-1fU" firstAttribute="top" secondItem="wXh-cq-0it" secondAttribute="bottom" constant="60" id="XXO-E0-H8w"/>
+                            <constraint firstItem="msu-fs-Hm1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XeF-ro-5U3"/>
                             <constraint firstItem="WNt-nc-nsj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.584" id="XrJ-u7-pWV"/>
+                            <constraint firstItem="msu-fs-Hm1" firstAttribute="top" secondItem="F9A-m1-oBb" secondAttribute="bottom" constant="81" id="brP-u5-XvG"/>
                             <constraint firstItem="F9A-m1-oBb" firstAttribute="top" secondItem="GQj-i4-1fU" secondAttribute="bottom" constant="60" id="cpO-Rj-K09"/>
                             <constraint firstItem="wXh-cq-0it" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fNp-NB-7Ei"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Fv-JZ-ixU" secondAttribute="trailing" id="hen-6L-bvv"/>
@@ -76,6 +94,7 @@
                     <connections>
                         <outlet property="celsiusLabel" destination="wXh-cq-0it" id="QYS-Wp-UDM"/>
                         <outlet property="fahrenheitLabel" destination="F9A-m1-oBb" id="FWy-yn-dil"/>
+                        <outlet property="resetButton" destination="msu-fs-Hm1" id="e5P-2Y-bse"/>
                         <outlet property="slider" destination="GQj-i4-1fU" id="0hm-jA-owP"/>
                     </connections>
                 </viewController>
